@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [](https://github.com/Marley-Semende/typescript-and-react-projects/tree/pricing-component)
+- Live Site URL: [](https://marley-marl-pricing-component.netlify.app/)
 
 ## My process
 
