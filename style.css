@@ -138,7 +138,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-   
 }
 
 .package-name {
@@ -201,6 +200,30 @@ h2{
     background-color: var(--linear);
     border: var(--very-light-grayish-blue) solid 1px;
     color: var(--very-light-grayish-blue);
+}
+
+@media (max-width: 768px) {
+body {
+    background-image: url("./images/bg-top.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 280% 5%;
+}
+
+    main {
+        width: 80%;  
+        margin: auto;
+    }
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+      
+    }
+
+    .card-one, .card-two, .card-three {
+        padding: 4%;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
 }
 
 
