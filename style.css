@@ -29,7 +29,7 @@ body {
 .title {
     text-align: center;
     color: var(--dark-grayish-blue);
-    margin: 6% 0 2% 0;
+    margin: 5% 0 2% 0;
 }
 
 .pricing-info {
@@ -102,7 +102,7 @@ body {
 .cards-container {
    display: flex;
     justify-content: center;
-    margin-top: 3.6%;
+    margin-top: 4.5%;
 }
 
 .card-one, .card-three {
