@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+    --linear: hsl(236.5, 67.5%, 71.5%);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Montserrat";
+    font-weight: 700;
+    background-color: var(--very-light-grayish-blue);
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 88% 10%, 8% 70%;
+    
+}
+
+.title {
+    text-align: center;
+    color: var(--dark-grayish-blue);
+    margin: 4% 0 2% 0;
+}
+
+.pricing-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grayish-blue);
+}
+
+.annually, .monthly {
+    margin-right: 10px;
+}
+
+/* Toggle */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+  }
+  
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--linear);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--linear);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--linear);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+
+.cards-container {
+   display: flex;
+    justify-content: center;
+    margin-top: 3.6%;
+}
+
+.card-one, .card-three {
+    background-color: #ffffff;
+    color: var(--dark-grayish-blue);
+    width: 350px;
+    height: 450px;
+    padding: 2%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-one {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-three {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-two {
+    background-color: var(--linear);
+    color: var(--very-light-grayish-blue) ;
+    width: 350px;
+    height: 500px;
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+
+.package-name {
+    margin-bottom: 4%;
+}
+h2{
+    font-size: 72px;
+    border-bottom: solid 1px var(--light-grayish-blue);
+    padding: 4%;
+}
+
+.dollar-symbol {
+    font-size: 40px;
+}
+
+.package {
+    border-bottom: solid 1px var(--light-grayish-blue);
+    text-align: center;
+    padding: 6%;
+}
+
+.card-one .package, .card-three .package {
+    color: var(--grayish-blue);
+}
+
+.card-one .learnmore, .card-three .learnmore {
+    background-color: var(--linear);
+    border: var(--linear) solid 2px;
+    border-radius: 8px;
+    color: var(--very-light-grayish-blue);
+    font-family: "Montserrat";
+    padding: 12px 0;
+    width: 80%;
+    margin: 40px 0;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-one .learnmore:hover, .card-three .learnmore:hover {
+    background-color: var(--very-light-grayish-blue);
+    border: var(--linear) solid 1px;
+    color: var(--linear);
+}
+.card-two .learnmore {
+    background-color: var(--very-light-grayish-blue);
+    border: var(--very-light-grayish-blue) solid 2px;
+    border-radius: 8px;
+    color: var(--linear);
+    font-family: "Montserrat";
+    padding: 12px 0;
+    width: 80%;
+    margin: 60px 0;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-two .learnmore:hover {
+    background-color: var(--linear);
+    border: var(--very-light-grayish-blue) solid 1px;
+    color: var(--very-light-grayish-blue);
+}
+
+
