@@ -89,7 +89,6 @@ position: relative;
   margin-top: 13rem;
   cursor: pointer;
   opacity: 0;
- 
    transform: scale(0.5) translateX(-50px); 
   color: transparent; 
   animation: slide-in 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards, move-in 1.5s ease-out 0.5s forwards; 
@@ -191,26 +190,48 @@ position: relative;
   margin-bottom: 8rem;
 }
 
-.section-two-heading button {
-  text-transform: uppercase;
-  color: var(--black);
-  border: var(--very-dark-grey) solid .1rem;
-  background-color: transparent;
-  font-size: 1.5rem;
-  padding: 1rem 5rem;
-  font-family: "Alata";
-  letter-spacing: .1px;
+
+.see-all-wrapper .button {
   cursor: pointer;
   letter-spacing: .2rem;
-  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: "Alata";
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 4.5rem;
+  position: relative;
+  border: solid var(--very-dark-grey) .1rem;
+  color: var(--black);
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
   border-radius: .2rem;
+  background: var(--black);
+  padding: 1rem .2rem;
+  line-height: 1.5;
 }
 
-.section-two-heading button:hover {
-  background-color: var(--black);
-  color: var(--white);
-  border: none;
+.see-all-wrapper .button:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  background-color: var(--white) ;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
 }
+
+.see-all-wrapper .button:hover:before {
+  width: 0%;
+  right: 50%;
+}
+
+.see-all-wrapper .button:hover {
+  color: #f1f1f1;
+  border-color: var(--black); 
+}
+
 
  h3 {
   font-size: 4.8rem;
@@ -302,7 +323,6 @@ position: relative;
     width: 50%;
 }
 
-
 .footer-btns {
   display: flex;
   justify-content: space-between;
@@ -348,3 +368,295 @@ content: "";
   color: var(--very-dark-grey);
 }
 
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 3.6rem;
+  height: 3.0rem;
+  right: 2.4rem;
+  top: 6rem;
+}
+
+.bm-burger-bars {
+  background: var(--white);
+
+}
+
+.bm-burger-bars-hover {
+  background: var(--dark-grey);
+}
+
+.bm-cross-button {
+  margin-top: 4rem;
+}
+
+.bm-cross {
+  background: var(--white);
+}
+
+.bm-menu-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.bm-menu {
+  background: var(--black);
+  padding: 2.5rem 1.5em 0;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: .2rem;
+  line-height: 1.5;
+}
+
+/* Morph shape */
+.bm-morph-shape {
+  fill: var(--black);
+}
+
+ .bm-item-list {
+ margin-top: 12rem;
+  padding: 2rem;
+}
+
+.bm-item {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+.bm-item:hover {
+
+}
+
+ .bm-overlay {
+  background: var(--black);
+} 
+
+.mobile-logo {
+ position: absolute;
+ top: -11rem;
+ cursor: pointer;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btns-wrapper {
+    display: none;
+   }
+
+   .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 1.2rem;
+    margin-bottom: 8rem;
+    cursor: pointer;
+  }
+
+
+}
+ 
+/* mobile */
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  
+    .header {
+      width: 100%;
+      height: auto;
+     
+    }
+    .logo {
+      margin-left: -4rem;
+    }
+    .main-title {
+     
+      width: 35rem;
+      margin-left: 2rem;
+      margin-top: 8rem;
+    }
+  
+    .main-title  h1 {
+      font-size: 4rem;
+      padding: 5rem;
+    }
+  
+  /* REVISIT THIS! */
+    .main-content {
+      max-width: 40.7rem;
+      margin: auto;
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-image: ur("./images/mobile/image-hero.jpg");
+      filter: blur(.1rem);
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+    
+  
+  .btns-wrapper {
+     display: none;
+    }
+  
+  .section-one {
+      display: flex;
+      flex-direction: column;
+      }
+   .interactive-mobile {
+        width: 36rem;
+        margin: 14rem 0 0 1.5rem;
+      }
+  
+.interactive-img-container::after {
+        display: none;
+      } 
+
+.section-one {
+  margin-bottom: 4rem;
+  width: 38rem;
+}
+
+.section-one-txt {
+ 
+  margin: 0 1rem 0 1rem;
+  padding: .2rem;
+  
+}
+
+.section-one-txt h2 {
+  font-size: 4rem;
+  letter-spacing: .1rem;
+  /* margin-bottom: 2.8rem; */
+  margin: 2rem 0 0 0;
+}
+
+.section-one-txt p {
+  font-family: 1.5rem;
+  letter-spacing: .1rem;
+  color: var(--dark-grey);
+  text-align: center;
+
+}
+
+.section-two-heading {
+  flex-direction: column;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.section-two h3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.section-two-heading button {
+text-transform: uppercase;
+color: var(--black);
+border: var(--very-dark-grey) solid .1rem;
+background-color: transparent;
+font-size: 1.5rem;
+padding: 1rem 5rem;
+font-family: "Alata";
+position: absolute;
+top: 124rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.gallery img {
+  margin: 0 2rem 0 2rem;
+  max-width: 35rem;
+}
+
+.img-title {
+  font-size: 3.1rem;
+  position: absolute;
+  top: 9.5rem;
+  left: 2.6rem;
+  width: 30rem;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  letter-spacing: .1rem;
+  padding: 0 0 1.8rem 0;
+ 
+}
+
+
+
+
+
+
+
+
+
+.footer {
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer-logo {
+  margin: 5rem 2rem;
+}
+
+/* .social-media {
+  position: relative;
+} */
+
+.social-media .icon {
+  margin-right: 1.5rem;
+}
+
+.footer-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: transparent;
+  color: var(--white);
+  font-family: "Alata";
+  padding-bottom: .8rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.footer-btns-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.footer p {
+  color: var(--very-dark-grey);
+  font-family: "Alata";
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  /* text-align: center; */
+  margin-top: -2rem;
+ 
+}
+
+.footer a {
+  color: var(--very-dark-grey);
+}
+
+      }
+
+      

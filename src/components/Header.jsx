@@ -2,7 +2,7 @@ function Header({ logo, buttonsLabel }) {
   return (
     <div className="header">
       <div className="logo-btns">
-        <img src={logo} alt="looopstudios logo" />
+        <img src={logo} alt="looopstudios logo" className="logo" />
         <div className="btns-wrapper">
           {buttonsLabel.map((button, index) => (
             <button key={index}>{button}</button>

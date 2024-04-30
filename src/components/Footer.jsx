@@ -25,11 +25,10 @@ function Footer({ logo, buttonsLabel }) {
           ))}
         </div>
         <p>
-          © 2024{" "}
+          ©2024{" "}
           <a href="https://github.com/Marley-Semende" target="_blank">
-            Coded by Marley_Marl
+            coded 🫶🏾 by Marley_Marl
           </a>
-          . All rights reserved.
         </p>
       </div>
     </div>
