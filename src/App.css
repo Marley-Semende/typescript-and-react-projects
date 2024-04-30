@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-grey: hsl(0, 0%, 55%);
+  --very-dark-grey: hsl(0, 0%, 41%);
+  font-size: 62.5%;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+ width: 100vw;
+ min-height: 100vh;
+  background-color: var(--white);
+ 
+}
+
+.app {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.header {
+  width: 100%;
+ height: 65rem;
+ margin-bottom: 16rem;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65rem;
+  background-image: url("./images//desktop/image-hero.jpg");
+  filter: blur(.1rem);
+  background-size: cover;
+  z-index: -1;
+}
+
+.logo-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6.5rem 7rem 0 7rem;
+  cursor: pointer;
+}
+
+.btns-wrapper button {
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  font-family: "Alata";
+  margin-right: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  padding-bottom: .5rem;
+}
+
+.btns-wrapper button:hover {
+position: relative;
+}
+
+.btns-wrapper button:hover::before {
+  content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid var(--white);
+    width: 50%;
+}
+
+.main-title {
+  border: var(--white) solid .2rem;
+  border-radius: .3rem;
+  width: 65rem;
+  margin-left: 7rem;
+  margin-top: 13rem;
+  cursor: pointer;
+  opacity: 0;
+ 
+   transform: scale(0.5) translateX(-50px); 
+  color: transparent; 
+  animation: slide-in 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards, move-in 1.5s ease-out 0.5s forwards; 
+}
+
+ @keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateX(-50px); 
+    color: transparent; 
+  }
+  to {
+    opacity: 1; 
+    transform: scale(1) translateX(0); 
+    color: var(--white); 
+  }
+}
+
+@keyframes move-in {
+  from {
+    transform: translateX(-50px); 
+  }
+  to {
+    transform: translateX(0); 
+  }
+} 
+
+.main-title  h1 {
+  text-transform: uppercase;
+  font-size: 6.9rem;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  letter-spacing: .1rem;
+  padding: 5rem;
+  color: var(--white);
+}
+
+.section-one {
+  display: flex;
+  font-family: "Alata";
+  font-size: 1.5rem;
+  margin-bottom: 16rem;
+  position: relative;
+}
+
+.interactive-img-container {
+position: relative;
+}
+
+.interactive-img {
+  border-radius: .1rem;
+}
+.interactive-img-container::after {
+  content: '';
+  position: absolute;
+  top: 18rem;
+  right: -10rem;
+  width: 27rem;
+  height: 35rem;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.section-one-txt {
+  margin-top: 28rem;
+  margin-left: -11rem;
+  margin-right: -4rem;
+  z-index: 1;
+  padding: .2rem;
+}
+
+.section-one-txt h2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: var(--black);
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  letter-spacing: .2rem;
+  padding: .2rem;
+  margin-bottom: 2.8rem;
+}
+
+.section-one-txt p {
+  font-family: 1.5rem;
+  letter-spacing: .1rem;
+  color: var(--dark-grey);
+  padding: .2rem;
+}
+
+.main-content {
+  max-width: 110rem;
+}
+
+
+.section-two-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.section-two-heading button {
+  text-transform: uppercase;
+  color: var(--black);
+  border: var(--very-dark-grey) solid .1rem;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 1rem 5rem;
+  font-family: "Alata";
+  letter-spacing: .1px;
+  cursor: pointer;
+  letter-spacing: .2rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+.section-two-heading button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+}
+
+ h3 {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  letter-spacing: .1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.2rem;
+  margin-bottom: 8rem;
+  cursor: pointer;
+  
+}
+
+.img-wrapper {
+  position: relative;
+ display: inline-block;
+}
+
+
+.img {
+  position: relative;
+  border-radius: .2rem;
+  width: 100%;
+ 
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease; 
+}
+
+.img-wrapper:hover .overlay {
+  background-color:  hsla(0, 0%, 55%, 0.7);
+}
+
+.img-title {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 3.1rem;
+  position: absolute;
+  top: 34rem;
+  left: 1.8rem;
+  width: 18rem;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  letter-spacing: .1rem;
+  padding: 0 0 1.8rem 0;
+}
+
+.footer {
+  background-color: var(--black);
+  width: 100%;
+  padding: 2rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin: 3rem 7rem;
+}
+
+.social-media {
+  position: relative;
+}
+
+.social-media .icon {
+  margin-right: 2.8rem;
+  position: relative;
+}
+
+.social-media .icon:hover::before {
+  content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25rem;
+    border-bottom: 2px solid var(--white);
+    width: 50%;
+}
+
+
+.footer-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  font-family: "Alata";
+  padding-bottom: .8rem;
+  margin-right: 2.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.footer-btns-wrapper button:hover {
+  position: relative;
+}
+
+.footer-btns-wrapper button:hover::before {
+content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid var(--white);
+    width: 50%;
+}
+
+.footer-btns-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 7rem;
+}
+
+.footer p {
+  color: var(--very-dark-grey);
+  font-family: "Alata";
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+.footer a {
+  color: var(--very-dark-grey);
+}
+
