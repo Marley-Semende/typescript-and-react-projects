@@ -191,7 +191,6 @@ position: relative;
   margin-bottom: 8rem;
 }
 
-
 .see-all-wrapper .button {
   cursor: pointer;
   letter-spacing: .2rem;
@@ -386,7 +385,6 @@ content: "";
 
 .bm-burger-bars {
   background: var(--white);
-
 }
 
 .bm-burger-bars-hover {
@@ -423,7 +421,7 @@ content: "";
 
  .bm-item-list {
  margin-top: 12rem;
-  /* padding: 2rem; */
+  
 }
 
 .bm-item {
@@ -433,10 +431,17 @@ content: "";
   font-family: "Josefin Sans";
   font-weight: 300;
   margin-bottom: 5rem;
+  position: relative;
 }
 
-.bm-item:hover {
-  border-bottom: var(--white) solid .1rem;
+.bm-item:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 0%, 0.5)
 }
 
 
@@ -583,7 +588,7 @@ font-size: 1.5rem;
 padding: 1rem 5rem;
 font-family: "Alata";
 position: absolute;
-top: 122rem;
+top: 128rem;
 margin-bottom: 3.5rem;
 
 
