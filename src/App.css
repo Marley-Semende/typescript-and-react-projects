@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-
-
 :root {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -247,7 +245,6 @@ position: relative;
   grid-gap: 1.2rem;
   margin-bottom: 8rem;
   cursor: pointer;
-  
 }
 
 .img-wrapper {
@@ -265,8 +262,8 @@ position: relative;
 .overlay {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 1.6rem;
+  width: 35rem;
   height: 100%;
   transition: background-color 0.3s ease; 
 }
@@ -428,9 +425,6 @@ content: "";
   margin-bottom: 5rem;
 }
 
-.bm-item:hover {
-
-}
 
  .bm-overlay {
   background: var(--black);
@@ -476,8 +470,6 @@ content: "";
     }
     .main-title {
       width: 35rem;
-      /* margin-left: 1rem; */
-      /* margin-top: 8rem; */
       margin: auto;
       margin-top: 10rem;
     }
@@ -517,7 +509,12 @@ content: "";
       }
    .interactive-mobile {
         width: 36rem;
-        margin: 6rem 0 0 1.5rem;
+        margin-top: 5rem;
+       
+      }
+
+      .interactive-img-container {
+        text-align: center;
       }
   
 .interactive-img-container::after {
@@ -530,7 +527,6 @@ content: "";
 }
 
 .section-one-txt {
-  /* margin: 0 1rem 0 1rem; */
   max-width: 40.7rem;
   padding: .2rem;
   margin: auto;
@@ -590,8 +586,11 @@ margin-bottom: 3.5rem;
 }
 
 .gallery img {
-  /* margin: 0 1.5rem 0 2rem; */
   max-width: 35rem;
+}
+
+.img-wrapper img:hover.overlay {
+  background-color:  hsla(0, 0%, 55%, 0.7);
 }
 
 .img-title {
@@ -600,7 +599,6 @@ margin-bottom: 3.5rem;
   left: 4rem;
   width: 12rem;
   letter-spacing: .1rem;
-  /* padding: 0 0 .3rem 0; */
  text-align: left;
 }
 
