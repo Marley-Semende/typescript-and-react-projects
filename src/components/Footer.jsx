@@ -27,7 +27,7 @@ function Footer({ logo, buttonsLabel }) {
         <p>
           ©2024{" "}
           <a href="https://github.com/Marley-Semende" target="_blank">
-            coded 🫶🏾 by Marley_Marl
+            Marley_Marl🫶🏾
           </a>
         </p>
       </div>
