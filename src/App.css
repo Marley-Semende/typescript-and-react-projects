@@ -374,7 +374,7 @@ content: "";
   width: 3.6rem;
   height: 3.0rem;
   right: 2.4rem;
-  top: 6rem;
+  top: 4rem;
 }
 
 .bm-burger-bars {
@@ -471,18 +471,20 @@ content: "";
      
     }
     .logo {
-      margin-left: -4rem;
+      margin-left: -5rem;
+      margin-top: -2rem;
     }
     .main-title {
-     
       width: 35rem;
-      margin-left: 2rem;
-      margin-top: 8rem;
+      /* margin-left: 1rem; */
+      /* margin-top: 8rem; */
+      margin: auto;
+      margin-top: 10rem;
     }
   
     .main-title  h1 {
-      font-size: 4rem;
-      padding: 5rem;
+      font-size: 4.5rem;
+      padding: 5rem 2rem;
     }
   
   /* REVISIT THIS! */
@@ -515,7 +517,7 @@ content: "";
       }
    .interactive-mobile {
         width: 36rem;
-        margin: 14rem 0 0 1.5rem;
+        margin: 6rem 0 0 1.5rem;
       }
   
 .interactive-img-container::after {
@@ -528,36 +530,38 @@ content: "";
 }
 
 .section-one-txt {
- 
-  margin: 0 1rem 0 1rem;
+  /* margin: 0 1rem 0 1rem; */
+  max-width: 40.7rem;
   padding: .2rem;
-  
+  margin: auto;
 }
 
 .section-one-txt h2 {
   font-size: 4rem;
   letter-spacing: .1rem;
-  /* margin-bottom: 2.8rem; */
-  margin: 2rem 0 0 0;
+  margin: 2.5rem 0 1rem 0;
+  text-align: center;
 }
 
 .section-one-txt p {
-  font-family: 1.5rem;
+  font-family: "Josefin Sans";
   letter-spacing: .1rem;
   color: var(--dark-grey);
   text-align: center;
-
+  font-weight: 1.5rem;
 }
 
 .section-two-heading {
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: .5rem;
   position: relative;
+
 }
 
 .section-two h3 {
   font-size: 4rem;
   text-align: center;
+  margin-bottom: -3rem;
 }
 
 .section-two-heading button {
@@ -569,60 +573,46 @@ font-size: 1.5rem;
 padding: 1rem 5rem;
 font-family: "Alata";
 position: absolute;
-top: 124rem;
+top: 125rem;
+margin-bottom: 3.5rem;
+
+
 }
 
 .gallery {
+  max-width: 40.7rem;
   display: flex;
   flex-direction: column;
+  margin-top: -2rem;
+  text-align: center;
  
   
 }
 
 .gallery img {
-  margin: 0 2rem 0 2rem;
+  /* margin: 0 1.5rem 0 2rem; */
   max-width: 35rem;
 }
 
 .img-title {
-  font-size: 3.1rem;
-  position: absolute;
-  top: 9.5rem;
-  left: 2.6rem;
-  width: 30rem;
-  font-family: "Josefin Sans";
-  font-weight: 300;
+  font-size: 2rem;
+  top: 7rem;
+  left: 4rem;
+  width: 12rem;
   letter-spacing: .1rem;
-  padding: 0 0 1.8rem 0;
- 
+  /* padding: 0 0 .3rem 0; */
+ text-align: left;
 }
-
-
-
-
-
-
-
-
 
 .footer {
   width: 100%;
   padding: 1rem;
+  margin-top: 5rem;
 }
 
 .footer-logo { 
-  margin: 5rem .5rem;
+  margin: 3rem .5rem;
 }
-
-.footer-logo img {
-
- /* width: 15rem;
- height: 4rem; */
-}
-
-/* .social-media {
-  position: relative;
-} */
 
 .social-media .icon {
   margin-right: 1rem;
@@ -630,7 +620,6 @@ top: 124rem;
 }
 
 .footer-btns {
-  
   padding-bottom: .8rem;
   margin-right: .5rem;
   font-size: 1.3rem;
@@ -647,7 +636,7 @@ top: 124rem;
   font-weight: 400;
   letter-spacing: 0;
   font-size: 1.2rem;
-  /* text-align: center; */
+  text-align: center;
   margin-top: -2rem;
  
 }
