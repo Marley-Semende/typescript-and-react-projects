@@ -25,9 +25,9 @@ function Footer({ logo, buttonsLabel }) {
           ))}
         </div>
         <p>
-          ©
+          ©2024 coded with 🫶🏾 by {""}
           <a href="https://github.com/Marley-Semende" target="_blank">
-            Marley_Marl🫶🏾
+            Marley_Marl
           </a>
         </p>
       </div>

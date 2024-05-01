@@ -80,9 +80,9 @@ position: relative;
 }
 
 .main-title {
-  border: var(--white) solid .2rem;
+  border: var(--white) solid .4rem;
   border-radius: .3rem;
-  width: 65rem;
+  width: 80rem;
   margin-left: 7rem;
   margin-top: 13rem;
   cursor: pointer;
@@ -116,11 +116,11 @@ position: relative;
 
 .main-title  h1 {
   text-transform: uppercase;
-  font-size: 6.9rem;
+  font-size: 7.5rem;
   font-family: "Josefin Sans";
   font-weight: 300;
   letter-spacing: .1rem;
-  padding: 5rem;
+  padding: 6rem;
   color: var(--white);
 }
 
@@ -151,11 +151,12 @@ position: relative;
 }
 
 .section-one-txt {
-  margin-top: 28rem;
+  margin-top: 24rem;
   margin-left: -11rem;
   margin-right: -4rem;
   z-index: 1;
   padding: .2rem;
+  font-size: 1.6rem;
 }
 
 .section-one-txt h2 {
@@ -166,14 +167,16 @@ position: relative;
   font-weight: 300;
   letter-spacing: .2rem;
   padding: .2rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
 }
 
 .section-one-txt p {
-  font-family: 1.5rem;
+  font-family: "Josefin Sans";
   letter-spacing: .1rem;
   color: var(--dark-grey);
   padding: .2rem;
+  font-size: 1.6rem;
 }
 
 .main-content {
@@ -242,7 +245,7 @@ position: relative;
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.2rem;
+  grid-gap: 2rem;
   margin-bottom: 8rem;
   cursor: pointer;
 }
@@ -512,7 +515,7 @@ content: "";
       }
    .interactive-mobile {
         width: 36rem;
-        margin-top: 5rem;
+        margin-top: 8rem;
        
       }
 
@@ -547,7 +550,7 @@ content: "";
   letter-spacing: .1rem;
   color: var(--dark-grey);
   text-align: center;
-  font-weight: 1.5rem;
+  font-weight: 1.6rem;
 }
 
 .section-two-heading {
@@ -572,7 +575,7 @@ font-size: 1.5rem;
 padding: 1rem 5rem;
 font-family: "Alata";
 position: absolute;
-top: 125rem;
+top: 122rem;
 margin-bottom: 3.5rem;
 
 
@@ -584,8 +587,6 @@ margin-bottom: 3.5rem;
   flex-direction: column;
   margin-top: -2rem;
   text-align: center;
- 
-  
 }
 
 .gallery img {
@@ -608,37 +609,51 @@ margin-bottom: 3.5rem;
 .footer {
   width: 100%;
   padding: 1rem;
-  margin-top: 5rem;
+  margin: 5rem 0;
+  min-height: 45vh;
+  position: relative
 }
 
 .footer-logo { 
-  margin: 3rem .5rem;
+  margin: 2rem 8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.social-media .icon {
-  margin-right: 1rem;
-
+.social-media {
+  max-width: 40.7rem;
+  margin: 4rem 0;
+  position: absolute;
+  top: 25rem;
+  text-align: center;
 }
 
 .footer-btns {
-  padding-bottom: .8rem;
-  margin-right: .5rem;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: .1rem;
 }
 
 .footer-btns-wrapper {
-  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .footer p {
   color: var(--very-dark-grey);
   font-family: "Alata";
   font-weight: 400;
-  letter-spacing: 0;
-  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: -2rem;
+  margin-top: .5rem;
+  position: absolute;
+  top: 34rem;
  
 }
 
@@ -648,7 +663,7 @@ margin-bottom: 3.5rem;
 }
 
 .overlay {
-  left: 1.6rem;
+  left: 0;
   width: 35rem;
 }
 
