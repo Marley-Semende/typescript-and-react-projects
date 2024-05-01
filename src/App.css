@@ -645,9 +645,11 @@ top: 128rem;
 
 .social-media {
   max-width: 40.7rem;
-  margin: 4rem 0;
+  margin: 2rem 0;
   position: absolute;
-  top: 22rem;
+  top: 23rem;
+  left: 1rem;
+  white-space: nowrap;
   text-align: center;
 }
 
