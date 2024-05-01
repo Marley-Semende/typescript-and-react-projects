@@ -292,6 +292,10 @@ position: relative;
   padding: 0 0 1.8rem 0;
 }
 
+.img-title:hover {
+  color: var(--black);
+}
+
 .footer {
   background-color: var(--black);
   width: 100%;
@@ -419,7 +423,7 @@ content: "";
 
  .bm-item-list {
  margin-top: 12rem;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .bm-item {
@@ -429,6 +433,10 @@ content: "";
   font-family: "Josefin Sans";
   font-weight: 300;
   margin-bottom: 5rem;
+}
+
+.bm-item:hover {
+  border-bottom: var(--white) solid .1rem;
 }
 
 
